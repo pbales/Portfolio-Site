@@ -9,26 +9,66 @@
     <link href="https://fonts.googleapis.com/css?family=Karla|Rubik" rel="stylesheet">
   </head>
   <body>
-    <nav role="navigation">
+    <nav class="navBar" role="navigation">
       <h1 class="navHeader">Peyton Bales</h1>
       <ul class="navItems">
-        <li class="navItem">Projects</li>
-        <li class="navItem">About Me</li>
-        <li class="navItem">Contact Info</li>
+        <li>
+         <p class="navItem"><a href="#aboutMe" class="navItemA">About Me</a></p>
+        </li>
+        <li>
+         <p class="navItem"><a href="#contactInfo" class="navItemA">Contact Info</a></p>
+        </li>
+        <li>
+         <p class="navItem"><a href="#projects" class="navItemA">Projects</a></p>
+        </li>
       </ul>
+      <a id="navMenu" href="javascript:void(0)">&#9776;</a>
+      <section class="expandedMenu menuHidden">
+        <ul class="expandedItems">
+          <li>
+            <p class="expandedItem"><a href="#aboutMe" class="expandedItemA">About Me</a></p>
+          </li>
+          <li>
+            <p class="expandedItem"><a href="#contactInfo" class="expandedItemA">Contact Info</a></p>
+          </li>
+          <li>
+            <p class="expandedItem expandedProjects"><a href="#projects" class="expandedItemA">Projects</a></p>
+          </li>
+        </ul>
+      </section>
     </nav>
     <main role="main">
-      <h2 class="mainHeader">Hi, I’m Peyton and I’m a web developer currently based in the Phoenix area.</h2>
-      <p>I work well with HTML, CSS, JavaScript, and jQuery</p>
-      <h2 class="mainHeader">Projects</h2>
-      <p>MLB Quiz App</p>
-      <h2 class="mainHeader">About Me</h2>
-      <p>I’m a web developer who has a love for all things technology. Since I was kid I’ve enjoyed using, learning, and building computers. Coding was the logical next step for me, and I haven’t looked back. I love the problem solving involved with web development and the satisfying results when you solve a problem and get the code working well. I like wrapping my head around new concepts and ideas, tech related or not. When I’m not working on code, I’m probably golfing, working on my motorcycle, watching baseball, or playing a video game.</p>
-      <h2 class="mainHeader">Contact Info</h2>
-      <p>Email</p>
-      <p>LinkedIn</p>
-      <p>GitHub</p>
+      <section id="hero">
+        <h2 class="mainHeader">Hi, I’m Peyton and I’m a web developer currently based in the Phoenix area.</h2>
+        <p>I work well with HTML, CSS, JavaScript, and jQuery</p>
+      </section>
+      <section id="aboutMe">
+        <h2 id="aboutMeHeader" class="mainHeader">About Me</h2>
+        <p id="aboutMeText">I’m a web developer who has a love for all things technology. Since I was kid I’ve enjoyed using, learning, and building computers. Coding was the logical next step for me, and I haven’t looked back. I love the problem solving involved with web development and the satisfying results when you get your code working well. When I’m not working on code, I’m probably golfing, working on my motorcycle, watching baseball, or playing a video game.</p>
+      </section>
+      <section id="contactInfo">
+        <h2 id="contactInfoHeader" class="mainHeader">Contact Info</h2>
+        <a href="https://www.linkedin.com/in/peyton-b-52b27ba4/" class="contactLink">LinkedIn</a>
+        <a href="https://github.com/pbales" class="contactLink">GitHub</a>
+        <a href="mailto:peyton.bales@gmail.com" class="contactLink">Email me at: peyton.bales@gmail.com</a>
+      </section>
+      <section id="projects">
+        <h2 id="projectsHeader" class="mainHeader">Projects</h2>
+        <h3>MLB Quiz Application</h3>
+        <a href="https://pbales.github.io/MLB-Quiz-App/"><img src="https://i.imgur.com/M4miVTy.png" alt="Screenshot of MLB quiz app"  class="projectScreenshot"></a>
+        <p class="projectsText">This is an interactive quiz app with Major League Baseball trivia questions. I built this applciation for my family, who are big baseball fans. I thought this would be a fun way to test each other's baseball knowledge.</p>
+        <p class="projectsText">This project uses HTML, CSS, JavaScript, and jQuery.</p>
+        <ul class="projectLinks">
+          <li>
+            <a href="https://github.com/pbales/MLB-Quiz-App" class="projectLink">Repository</a>
+          </li>
+          <li>
+            <a href="https://pbales.github.io/MLB-Quiz-App/" class="projectLink">Live Site</a>
+          </li>
+        </ul>
+      </section>     
     </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
   </body>
 </html>
